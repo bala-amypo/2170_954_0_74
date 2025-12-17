@@ -33,6 +33,6 @@ public class Studentcontroller{
         @PathVariable Long id;
         @RequestBody StudentEntity student
     ){
-        return service.updateStudent(id,student);        
+        return service.updateStudent(id,student);         
     }
 }
