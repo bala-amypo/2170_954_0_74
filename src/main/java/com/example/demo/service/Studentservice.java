@@ -5,5 +5,5 @@ public interface StudentEntity{
     StudentEntity addStudent(StudentEntity student);
     list<StudentEntity>getAllStudent();
     StudentEntity getStudentById(Long id);
-    StudentEntity updateStudent(Long id,StudentEntity strudent);
+    StudentEntity updateStudent(Long id,StudentEntity student);
 }
