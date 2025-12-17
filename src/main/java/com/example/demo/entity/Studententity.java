@@ -16,5 +16,19 @@ public class StudentEntity{
     public Long setId(){
         return id;
     }
-    
+    public void getName(){
+        return name;
+    }
+    public int getAge(){
+        return age;
+    }
+    public void setAge(int age){
+        this.age=age;
+    }
+    public String getEmail(){
+        return email;
+    }
+        public void setEmail(String email){
+            this.email=email;
+        }
 }
