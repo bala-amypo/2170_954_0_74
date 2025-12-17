@@ -22,9 +22,17 @@ public class Studentcontroller{
     public List<StudentEntity> getAllStudents(){
         return service.getAllStudents();
     }
-    @GetMapping("/id"){
+    @GetMapping("/id")
         public StudentEntity getStudentId(@PathVariable Long id){
-            return
+            return service.getStudentId(id);
         }
+
+    
+    @PutMapping("/update/{id}")
+    public StudentEntity updateStudent(
+        @PathVariable Long id;
+        @RequestBody StudentEntity student
+    ){
+        return service.updateStudent(id,student);        
     }
 }
