@@ -10,4 +10,21 @@ import com.example.demo.services.Studentservice;
 
 @Restcontroller;
 @ResquestMapping("/student")
-public class
+public class Studentcontroller{
+    @Autowired
+    private Studentservice service;
+
+    @PostMapping('/add')
+    public StudentEntity addStudent(@RequestBody StudentEntity student){
+        return service.addStudent(student);
+    }
+    @GetMapping("/all")
+    public List<StudentEntity> getAllStudents(){
+        return service.getAllStudents();
+    }
+    @GetMapping("/id"){
+        public StudentEntity getStudentId(@PathVariable Long id){
+            return
+        }
+    }
+}
