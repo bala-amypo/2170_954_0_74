@@ -14,7 +14,7 @@ public class Studentcontroller{
     @Autowired
     private Studentservice service;
 
-    @PostMapping('/add')
+    @PostMapping('/add') // post means give the data 
     public StudentEntity addStudent(@RequestBody StudentEntity student){
         return service.addStudent(student);
     }
