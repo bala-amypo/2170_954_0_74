@@ -29,7 +29,7 @@ public class Studentcontroller{
 
     
     @PutMapping("/update/{id}")
-    public StudentEntity updateStudent(
+    public StudentEntity updateStudent( yuzs
         @PathVariable Long id;
         @RequestBody StudentEntity student
     ){
