@@ -35,4 +35,4 @@ public class Studentcontroller{
     ){
         return service.updateStudent(id,student);         
     }
-}
+}cd reactapp && npm i&&npm i canvas@latest && nvm use 16 &&npm start
