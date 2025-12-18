@@ -12,9 +12,9 @@ import com.example.demo.services.Studentservice;
 @ResquestMapping("/student")
 public class Studentcontroller{
     @Autowired
-    private Studentservice service;
+    private Studentservice service; // ser is object of service
 
-    @PostMapping('/add') // post means give the data 
+    @PostMapping('/add') // it is annotation and post means give the data 
     public StudentEntity addStudent(@RequestBody StudentEntity student){
         return service.addStudent(student);
     }
